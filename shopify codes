@@ -1,0 +1,9 @@
+***/
+ for removing add to cart button 
+css code to insert at the bottom of base.css 
+/***
+
+button.product-form__submit.button.button--full-width.button--secondary {
+    display: none;
+}
+
