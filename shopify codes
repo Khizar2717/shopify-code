@@ -1,9 +1,18 @@
-***/
+/*
  for removing add to cart button 
 css code to insert at the bottom of base.css 
-/***
+*/
 
 button.product-form__submit.button.button--full-width.button--secondary {
     display: none;
 }
+
+/* converting badge sale to 500 Off 
+add ths code in price.liquid */
+Save  {{ compare_at_price | minus: price | money }}
+
+/* for product card and percentage */
+
+ {{card_product.compare_at_price | minus:card_product.price | times: 100 | divided_by:card_product.compare_at_price }}% OFF
+
 
